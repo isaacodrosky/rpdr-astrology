@@ -166,3 +166,7 @@ header a:active {
     border-radius: 15px;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
 }
+
+.about-modal a {
+    color: var(--gold);
+}
