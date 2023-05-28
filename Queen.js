@@ -9,10 +9,16 @@ class Queen {
             <img src="${profilePic}" alt="${name}">
             <div class="queen-card-text">
                 <p class="queen-name">${name}, <span class="season">${season}</span></p>
-                <p class="queen-bio">Lorem ipsum, queen bio will go here, etc</p>
+                <p class="queen-bio">${bio}</p>
             </div>
             `
         return queenHtml
+    }
+
+    getQueenAvatarHtml() {
+        const { name, avatar } = this
+        const avatarHtml = `<img src="${avatar}" alt="${name}">`
+        return avatarHtml
     }
 }
 

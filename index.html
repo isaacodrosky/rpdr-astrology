@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,62 +25,66 @@
   </head>
   <body>
     <div class="container">
-        <header>
-          <a
-            href="https://github.com/isaacodrosky"
-            target="_blank"
-            class="github-link"
-          >
+      <header>
+        <a
+          href="https://github.com/isaacodrosky"
+          target="_blank"
+          class="github-link"
+        >
           <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="index.html" class="home-link">
-            <i class="fa-solid fa-crown"></i>
-          </a>
-          <a href="#" id="about-btn" class="about-link">
-            <i class="fa-solid fa-circle-question"></i>
-          </a>
-        </header>
-        <main>
-          <div class="queen-card" id="queen-card">
-            <!-- this part rendered by js -->
-          </div>
-          <div class="current-placement-container">
-            <p class="current-placement blue-bg"> <i class="fa-solid fa-sun"></i> Sun Sign</p>
-            <div class="button-container">
-              <button id="reject-btn" class="blue-bg reject-btn">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-              <button id="accept-btn" 
-              class="blue-bg accept-btn">
-                <i class="fa-solid fa-check"></i>
-              </button>
-            </div>
-          </div>
+        </a>
+        <a href="index.html" class="home-link">
+          <i class="fa-solid fa-crown"></i>
+        </a>
+        <a href="#" id="about-btn" class="about-link">
+          <i class="fa-solid fa-circle-question"></i>
+        </a>
+      </header>
+      <main>
+        <div class="queen-card" id="queen-card">
+        </div>
 
-          <!-- about modal -->
-          <div class="about-modal" id="about-modal">
-            <i class="fa-solid fa-xmark" id="about-close"></i>
-            <h1>About</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero adipisci soluta consequatur reprehenderit dicta repellat.</p>
-            <h2>Credits</h2>
-            <p>Special thanks to Reddit user u/ICanBeAPhantom13's <a href="https://www.reddit.com/r/rupaulsdragrace/comments/uve5gn/all_drag_race_us_queens_zodiac_signs_2022/">post</a> documenting all US queens' zodiac signs, which I referenced to select queens for this site.</p>
-            <ul>
-              <p>Photo Credits</p>
-              <li>Monet - Adam Ouahmane</li>
-              <li>Katya -  Astor Yang</li>
-              <li>Bob - Jacob Ritts</li>
-              <li>Trixie - Jon Sams</li>
-              <li>Jinkx - Alec White</li>
-              <li>Kandy - World of Wonder</li>
-              <li>Jaida - Adam Ouahmane</li>
-              <li>Ra'Jah - World of Wonder</li>
-              <li>Shea - Dan Polyak</li>
-              <li>Alaska - Albert Sanchez</li>
-            </ul>
-          </div>
-        </main>
+        <div
+          class="current-placement-container"
+          id="current-placement-container"
+        >
+        </div>
+
+        <!-- about modal -->
+        <div class="about-modal" id="about-modal">
+          <i class="fa-solid fa-xmark" id="about-close"></i>
+          <h1>About</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+            adipisci soluta consequatur reprehenderit dicta repellat.
+          </p>
+          <h2>Credits</h2>
+          <p>
+            Special thanks to Reddit user u/ICanBeAPhantom13's
+            <a
+              href="https://www.reddit.com/r/rupaulsdragrace/comments/uve5gn/all_drag_race_us_queens_zodiac_signs_2022/"
+              >post</a
+            >
+            documenting all US queens' zodiac signs, which I referenced to
+            select queens for this site.
+          </p>
+          <ul>
+            <p>Photo Credits</p>
+            <li>Monet - Adam Ouahmane</li>
+            <li>Katya - Astor Yang</li>
+            <li>Bob - Jacob Ritts</li>
+            <li>Trixie - Jon Sams</li>
+            <li>Jinkx - Alec White</li>
+            <li>Kandy - World of Wonder</li>
+            <li>Jaida - Adam Ouahmane</li>
+            <li>Ra'Jah - World of Wonder</li>
+            <li>Shea - Dan Polyak</li>
+            <li>Alaska - Albert Sanchez</li>
+          </ul>
+        </div>
+      </main>
     </div>
-    
+
     <script src="app.js" type="module"></script>
   </body>
 </html>
