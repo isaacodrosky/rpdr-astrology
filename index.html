@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter&family=Quicksand:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>RPDR Big 3</title>
+  </head>
+  <body>
+    <div class="container">
+        <header>
+          <a
+            href="https://github.com/isaacodrosky"
+            target="_blank"
+            class="github-link"
+          >
+          <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="index.html" class="home-link">
+            <i class="fa-solid fa-crown"></i>
+          </a>
+          <a href="#" id="about-btn" class="about-link">
+            <i class="fa-solid fa-circle-question"></i>
+          </a>
+        </header>
+        <main>
+          <div class="queen-card" id="queen-card">
+            <!-- this part rendered by js -->
+          </div>
+          <div class="current-placement-container">
+            <p class="current-placement blue-bg"> <i class="fa-solid fa-sun"></i> Sun Sign</p>
+            <div class="button-container">
+              <button id="reject-btn" class="blue-bg reject-btn">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button id="accept-btn" 
+              class="blue-bg accept-btn">
+                <i class="fa-solid fa-check"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- about modal -->
+          <div class="about-modal" id="about-modal">
+            <i class="fa-solid fa-xmark" id="about-close"></i>
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In fuga quibusdam explicabo, ab distinctio illo exercitationem. Repellendus, laboriosam doloribus nesciunt obcaecati ducimus iste labore provident ullam necessitatibus, inventore voluptatum quasi rerum, unde debitis! Necessitatibus eum explicabo aliquam illum, illo, non a doloremque odit enim dolorum quod delectus voluptatibus tempore molestiae.</p>
+          </div>
+        </main>
+    </div>
+    
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

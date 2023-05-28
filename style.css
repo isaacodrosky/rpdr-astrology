@@ -1,0 +1,168 @@
+
+/* --- COLORS/FONTS --- */
+:root {
+    --dk-blue: #070737;
+    --blue: #0f0d5c;
+    --lt-blue: #130d78;
+    --gold: #FFCA50;
+    --lt-gold: #ffdf94;
+    --decorative: 'Cinzel', cursive, serif;
+    --main-font: 'Inter', sans-serif;
+    --header-font: 'Quicksand', sans-serif;
+}
+
+/* --- GLOBAL --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--dk-blue);
+    color: var(--gold);
+    font-family: var(--main-font);
+}
+
+.blue-bg {
+    background-color: var(--blue);
+}
+
+.container {
+    max-width: 400px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* --- HEADER --- */
+header {
+    width: 90%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    font-size: 2rem;
+    line-height: 2rem;
+    color: var(--gold);
+}
+
+header a:hover,
+header a:active {
+    color: var(--lt-gold);
+}
+
+.home-link {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+}
+
+
+/* --- QUEEN CARD --- */
+.queen-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+
+.queen-card img {
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    z-index: 0;
+}
+
+.queen-card-text {
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    z-index: 1;
+    color: #FFF;
+    padding: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.queen-name {
+    font-family: var(--decorative);
+    font-size: 1.5rem;
+}
+
+.season {
+    font-size: 1.2rem;
+}
+
+.queen-bio {
+    font-family: var(--main-font);
+}
+
+/* --- CURRENT PLACEMENT / BUTTONS --- */
+.current-placement-container {
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.current-placement {
+    font-family: var(--header-font);
+    font-size: 1.7rem;
+    padding: 10px;
+    border-radius: 8px;
+    vertical-align: middle;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.button-container button {
+    width: 85px;
+    height: 85px;
+    border-radius: 50vh;
+    border: none;
+}
+
+.button-container button:hover,
+.button-container button:active {
+    cursor: pointer;
+    background-color: var(--lt-blue);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button-container i {
+    font-size: 3rem;
+}
+
+.reject-btn {
+    color: red;
+}
+
+.accept-btn {
+    color: limegreen;
+}
+
+/* --- ABOUT MODAL --- */
+
+.about-modal {
+    display: none;
+    position: fixed;
+    width: 300px;
+    max-width: 85%;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    z-index: 100;
+    background-color: var(--dk-blue);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+}
