@@ -2,7 +2,7 @@ import { Queen } from './Queen.js'
 import { queenData } from './data.js'
 
 const queensArray = ["monet", "katya", "raja", "bob", "trixie", 
-    "jinkx", "adore", "kandy", "jaida", "rajah", "shea", "alaska"]
+    "jinkx", "adore", "kandy", "jaida", "rajah", "shea", "alaska", "crystal", "cracker", "kylie", "jan", "willam", "alexis", "tammie", "chichi", "tina", "tatianna", "alyssa", "peppermint"]
 
 // init empty array, this will hold queens that are saved to user's big three with [0] = sun sign, [1] = moon, [2] = asc
 let bigThree = []
@@ -11,11 +11,12 @@ let currQueenData
 
 render()
 
+
 function getNewQueen() {
     let i = Math.floor(Math.random() * queensArray.length)
     currQueenData = queenData[queensArray[i]]
     return new Queen(currQueenData)
-}
+} 
 
 function getControlsHtml() {
     const controlsHtml = `

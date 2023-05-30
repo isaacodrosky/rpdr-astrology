@@ -71,6 +71,78 @@ const queenData = {
         season: "S5 / AS2",
         avatar: "images/alaska-avatar.jpg",
     },
+    crystal: {
+        name: "Crystal Methyd",
+        profilePic: "images/crystal.jpeg",
+        season: "S12",
+        avatar: "images/crystal-avatar.jpg",
+    },
+    cracker: {
+        name: "Miz Cracker",
+        profilePic: "images/cracker.jpeg",
+        season: "S10 / AS5",
+        avatar: "images/cracker-avatar.jpg",
+    },
+    kylie: {
+        name: "Kylie Sonique Love",
+        profilePic: "images/kylie.jpeg",
+        season: "S2 / AS6",
+        avatar: "images/kylie-avatar.jpg",
+    },
+    jan: {
+        name: "Jan Sport",
+        profilePic: "images/jan.jpeg",
+        season: "S12 / AS6",
+        avatar: "images/jan-avatar.jpg",
+    },
+    willam: {
+        name: "Willam",
+        profilePic: "images/willam.jpeg",
+        season: "S4",
+        avatar: "images/willam-avatar.jpg",
+    },
+    alexis: {
+        name: "Alexis Mateo",
+        profilePic: "images/alexis.jpeg",
+        season: "S3 / AS1 / AS5",
+        avatar: "images/alexis-avatar.jpg",
+    },
+    tammie: {
+        name: "Tammie Brown",
+        profilePic: "images/tammie.jpeg",
+        season: "S1 / AS1",
+        avatar: "images/tammie-avatar.jpg",
+    },
+    chichi: {
+        name: "Chi Chi Devayne",
+        profilePic: "images/chichi.jpeg",
+        season: "S8 / AS3",
+        avatar: "images/chichi-avatar.jpg",
+    },
+    tina: {
+        name: "Tina Burner",
+        profilePic: "images/tina.jpeg",
+        season: "S13",
+        avatar: "images/tina-avatar.jpg",
+    },
+    tatianna: {
+        name: "Tatianna",
+        profilePic: "images/tatianna.jpeg",
+        season: "S2 / AS2",
+        avatar: "images/tatianna-avatar.jpg",
+    },
+    alyssa: {
+        name: "Alyssa Edwards",
+        profilePic: "images/alyssa.jpeg",
+        season: "S5 / AS2",
+        avatar: "images/alyssa-avatar.jpg",
+    },
+    peppermint: {
+        name: "Peppermint",
+        profilePic: "images/peppermint.jpeg",
+        season: "S9",
+        avatar: "images/peppermint-avatar.jpg",
+    },
 }
 
 export { queenData }
