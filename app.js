@@ -74,12 +74,23 @@ function checkIfBigThree() {
 
         document.getElementById('queen-card').style.display = 'none'
         document.getElementById('current-placement-container').style.display = 'none'
-        document.getElementById('container').innerHTML =  `
-            <div class="results-container">
+        document.getElementById('container').innerHTML =  `<div class="results-container">
                 <p>Your Big Three</p>
-                <br> ${iconsHtml[0]} ${avatarsHtml[0]}
-                <br> ${iconsHtml[1]} ${avatarsHtml[1]}
-                <br> ${iconsHtml[2]} ${avatarsHtml[2]}
+                <div class="all-avatars">
+                    <br> 
+                    <div class="avatar-container">
+                        ${iconsHtml[0]} ${avatarsHtml[0]}
+                    </div>
+                    <br> 
+                    <div class="avatar-container">
+                        ${iconsHtml[1]} ${avatarsHtml[1]}
+                    </div>
+                    <br> 
+                    <div class="avatar-container">
+                        ${iconsHtml[2]} ${avatarsHtml[2]}
+                    </div>
+                </div>
+                <a href="index.html" class="restart-btn">Restart</a>
             </div>`
     }
 }

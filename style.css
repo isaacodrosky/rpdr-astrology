@@ -147,8 +147,52 @@ header a:active {
 
 /* --- RESULTS STYLES --- */
 
+.results-container {
+    width: 85%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.results-container p {
+    font-family: var(--header-font);
+    font-size: 1.7rem;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--blue);
+}
+
+.all-avatars {
+    background-color: var(--blue);
+    margin-top: 20px;
+    border-radius: 8px;
+    padding-bottom: 25px;
+}
+
+.avatar-container {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .avatar {
     border-radius: 50vh;
+}
+
+.restart-btn {
+    display: block;
+    background-color: var(--gold);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--blue);
+    font-family: var(--header-font);
+}
+
+.restart-btn:hover,
+.restart-btn:active {
+    background-color: var(--lt-gold);
 }
 
 /* --- ABOUT MODAL --- */
