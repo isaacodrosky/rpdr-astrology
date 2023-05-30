@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-    max-width: 400px;
+    max-width: 300px;
     width: 95%;
     margin: 0 auto;
 }
@@ -90,27 +90,24 @@ header a:active {
 
 .queen-name {
     font-family: var(--decorative);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .season {
-    font-size: 1.2rem;
-}
-
-.queen-bio {
     font-family: var(--main-font);
+    font-size: 1rem;
 }
 
 /* --- CURRENT PLACEMENT / BUTTONS --- */
 .current-placement-container {
-    width: 50%;
+    width: 60%;
     margin: 15px auto 20px auto;
     text-align: center;
 }
 
 .current-placement {
     font-family: var(--header-font);
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     padding: 10px;
     border-radius: 8px;
     vertical-align: middle;
@@ -123,8 +120,8 @@ header a:active {
 }
 
 .button-container button {
-    width: 85px;
-    height: 85px;
+    width: 65px;
+    height: 65px;
     border-radius: 50vh;
     border: none;
 }
@@ -137,7 +134,7 @@ header a:active {
 }
 
 .button-container i {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .reject-btn {
@@ -146,6 +143,12 @@ header a:active {
 
 .accept-btn {
     color: limegreen;
+}
+
+/* --- RESULTS STYLES --- */
+
+.avatar {
+    border-radius: 50vh;
 }
 
 /* --- ABOUT MODAL --- */

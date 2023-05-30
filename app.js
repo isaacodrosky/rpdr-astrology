@@ -4,9 +4,12 @@ import { queenData } from './data.js'
 const queensArray = ["monet", "katya", "raja", "bob", "trixie", 
     "jinkx", "adore", "kandy", "jaida", "rajah", "shea", "alaska"]
 
+const bigThreeArray = ['sun', 'moon', 'arrow-up']
 // init empty array, this will hold queens that are saved to user's big three with [0] = sun sign, [1] = moon, [2] = asc
 let bigThree = []
+// init currQueenData to be used globally - will use this to add selected queens to bigThree arr
 let currQueenData
+
 render()
 
 function getNewQueen() {
@@ -51,14 +54,34 @@ document.getElementById('reject-btn').addEventListener('click', () => document.g
 document.getElementById('accept-btn').addEventListener('click', () => handleAcceptClick())
 
 function handleAcceptClick() {
-    bigThree.push(currQueenData)
-    document.getElementById('queen-card').innerHTML = getNewQueen().getQueenHtml()
+    if (bigThree.length < 3) {
+        bigThree.push(new Queen(currQueenData))
+        document.getElementById('queen-card').innerHTML = getNewQueen().getQueenHtml()
+        document.getElementById('current-placement').innerHTML = getPlacementHtml() 
+        }
+    checkBigThree()
 }
 
-//   repeat process until 3 queens in arr
-//   when all 3 placements done, display "your big three" component
-//      (but 1st) set display: none on queen-card and 
-//      current-placement-container
+
+function checkBigThree() {
+    if (bigThree.length === 3) {
+        const iconsHtml = bigThreeArray.map(placement => 
+            `<i class="fa-solid fa-${placement}"></i>`)
+        const avatarsHtml = bigThree.map(queen =>
+                queen.getAvatarHtml())
+
+        document.getElementById('queen-card').style.display = 'none'
+        document.getElementById('current-placement-container').style.display = 'none'
+        document.getElementById('container').innerHTML =  `
+            <p>Your Big Three</p>`
+        document.getElementById('container').innerHTML += `
+            <br> ${iconsHtml[0]} ${avatarsHtml[0]}`
+        document.getElementById('container').innerHTML += `
+            <br> ${iconsHtml[1]} ${avatarsHtml[1]}`
+        document.getElementById('container').innerHTML += `
+            <br> ${iconsHtml[2]} ${avatarsHtml[2]}`    
+    }
+}
 
 
 // OPEN + CLOSE ABOUT MODAL

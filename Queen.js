@@ -8,18 +8,19 @@ class Queen {
         const queenHtml = `
             <img src="${profilePic}" alt="${name}">
             <div class="queen-card-text">
-                <p class="queen-name">${name}, <span class="season">${season}</span></p>
-                <p class="queen-bio">${bio}</p>
+                <p class="queen-name">${name}</p>
+                <p class="season">${season}</p>
             </div>
             `
         return queenHtml
     }
 
-    getQueenAvatarHtml() {
+    getAvatarHtml() {
         const { name, avatar } = this
-        const avatarHtml = `<img src="${avatar}" alt="${name}">`
+        const avatarHtml = `<img src="${avatar}" alt="${name}" class="avatar">`
         return avatarHtml
     }
+
 }
 
 export { Queen }
