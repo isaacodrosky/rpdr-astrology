@@ -178,6 +178,8 @@ header a:active {
 
 .avatar {
     border-radius: 50vh;
+    width: 100px;
+    height: 100px;
 }
 
 .restart-btn {
@@ -217,4 +219,13 @@ header a:active {
 
 .about-modal a {
     color: var(--gold);
+}
+
+.about-modal a:hover,
+.about-modal a:active {
+    color: var(--lt-gold);
+}
+
+.about-modal i {
+    text-align: right;
 }

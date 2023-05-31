@@ -95,17 +95,17 @@ const queenData = {
         season: "S12 / AS6",
         avatar: "images/jan-avatar.jpg",
     },
-    willam: {
-        name: "Willam",
-        profilePic: "images/willam.jpeg",
-        season: "S4",
-        avatar: "images/willam-avatar.jpg",
+    jujubee: {
+        name: "Jujubee",
+        profilePic: "images/jujubee.jpeg",
+        season: "S2 / AS1 / AS5",
+        avatar: "images/jujubee-avatar.jpg",
     },
-    alexis: {
-        name: "Alexis Mateo",
-        profilePic: "images/alexis.jpeg",
-        season: "S3 / AS1 / AS5",
-        avatar: "images/alexis-avatar.jpg",
+    kim: {
+        name: "Kim Chi",
+        profilePic: "images/kim.jpeg",
+        season: "S8",
+        avatar: "images/kim-avatar.jpg",
     },
     tammie: {
         name: "Tammie Brown",
@@ -114,16 +114,16 @@ const queenData = {
         avatar: "images/tammie-avatar.jpg",
     },
     chichi: {
-        name: "Chi Chi Devayne",
+        name: "Chi Chi DeVayne",
         profilePic: "images/chichi.jpeg",
         season: "S8 / AS3",
         avatar: "images/chichi-avatar.jpg",
     },
-    tina: {
-        name: "Tina Burner",
-        profilePic: "images/tina.jpeg",
-        season: "S13",
-        avatar: "images/tina-avatar.jpg",
+    roople: {
+        name: "RuPaul",
+        profilePic: "images/rupaul.jpeg",
+        season: "",
+        avatar: "images/rupaul-avatar.jpg",
     },
     tatianna: {
         name: "Tatianna",
