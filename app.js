@@ -8,9 +8,8 @@ const queensArray = ["monet", "katya", "raja", "bob", "trixie",
 let bigThree = []
 // init currQueenData to be used globally - will use this to add selected queens to bigThree arr
 let currQueenData
-
+// render page on reload/initial load
 render()
-
 
 function getNewQueen() {
     let i = Math.floor(Math.random() * queensArray.length)
@@ -29,8 +28,7 @@ function getControlsHtml() {
             <button id="accept-btn" class="blue-bg accept-btn">
             <i class="fa-solid fa-check"></i>
             </button>
-        </div>
-    `
+        </div>`
     return controlsHtml
 }
 
@@ -51,25 +49,24 @@ function render() {
 
 document.getElementById('reject-btn').addEventListener('click', 
     function() {
+        // close the about modal if open
+        document.getElementById('about-modal').style.display = 'none'
         document.getElementById('queen-card').classList.add('rejected')
         setTimeout(() => {
            document.getElementById('queen-card').innerHTML = getNewQueen().getQueenHtml() 
            document.getElementById('queen-card').classList.remove('rejected')
-        }, 800)        
+        }, 700)        
     })
 
-    
-        
-    
-
 document.getElementById('accept-btn').addEventListener('click',
-    // change from arrow funct to reg anonymous funct
     function() {
+        // close the about modal if open
+        document.getElementById('about-modal').style.display = 'none'
         document.getElementById('queen-card').classList.add('accepted')
         setTimeout(() => {
             handleAcceptClick()
             document.getElementById('queen-card').classList.remove('accepted')
-        }, 800)
+        }, 700)
     })
 
 function handleAcceptClick() {
