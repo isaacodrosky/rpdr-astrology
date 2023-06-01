@@ -119,7 +119,7 @@ const queenData = {
         season: "S8 / AS3",
         avatar: "images/chichi-avatar.jpg",
     },
-    roople: {
+    rupaul: {
         name: "RuPaul",
         profilePic: "images/rupaul.jpeg",
         season: "",

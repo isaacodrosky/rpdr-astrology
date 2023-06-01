@@ -142,8 +142,40 @@ header a:active {
     color: red;
 }
 
+.rejected::before {
+    content: 'Rejected';
+    font-family: var(--header-font);
+    font-size: 1.3rem;
+    color: red;
+    position: absolute;
+    z-index: 2000;
+    top: 10px;
+    left: -15px;
+    padding: 10px;
+    border: 3px solid red;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    transform: rotate(-30deg);
+}
+
 .accept-btn {
     color: limegreen;
+}
+
+.accepted::before {
+    content: 'Accepted';
+    font-family: var(--header-font);
+    font-size: 1.3rem;
+    color: limegreen;
+    position: absolute;
+    z-index: 2000;
+    top: 10px;
+    right: -15px;
+    padding: 10px;
+    border: 3px solid limegreen;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    transform: rotate(30deg);
 }
 
 /* --- RESULTS STYLES --- */
