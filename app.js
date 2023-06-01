@@ -2,7 +2,7 @@ import { Queen } from './Queen.js'
 import { queenData } from './data.js'
 
 const queensArray = ["monet", "katya", "raja", "bob", "trixie", 
-    "jinkx", "adore", "kandy", "jaida", "rajah", "shea", "alaska", "crystal", "cracker", "kylie", "jan", "jujubee", "kim", "tammie", "chichi", "roople", "tatianna", "alyssa", "peppermint"]
+    "jinkx", "adore", "kandy", "jaida", "rajah", "shea", "alaska", "crystal", "cracker", "kylie", "jan", "jujubee", "kim", "tammie", "chichi", "rupaul", "tatianna", "alyssa", "peppermint"]
 
 // init empty array, this will hold queens that are saved to user's big three with [0] = sun sign, [1] = moon, [2] = asc
 let bigThree = []
@@ -49,9 +49,28 @@ function render() {
     document.getElementById('current-placement').innerHTML = getPlacementHtml()
 }
 
-document.getElementById('reject-btn').addEventListener('click', () => document.getElementById('queen-card').innerHTML = getNewQueen().getQueenHtml())
+document.getElementById('reject-btn').addEventListener('click', 
+    function() {
+        document.getElementById('queen-card').classList.add('rejected')
+        setTimeout(() => {
+           document.getElementById('queen-card').innerHTML = getNewQueen().getQueenHtml() 
+           document.getElementById('queen-card').classList.remove('rejected')
+        }, 800)        
+    })
 
-document.getElementById('accept-btn').addEventListener('click', () => handleAcceptClick())
+    
+        
+    
+
+document.getElementById('accept-btn').addEventListener('click',
+    // change from arrow funct to reg anonymous funct
+    function() {
+        document.getElementById('queen-card').classList.add('accepted')
+        setTimeout(() => {
+            handleAcceptClick()
+            document.getElementById('queen-card').classList.remove('accepted')
+        }, 800)
+    })
 
 function handleAcceptClick() {
     if (bigThree.length < 3) {
