@@ -52,6 +52,7 @@ header a {
     font-size: 2rem;
     line-height: 2rem;
     color: var(--gold);
+    cursor: pointer;
 }
 
 header a:hover,
@@ -185,7 +186,7 @@ header a:active {
 /* --- RESULTS STYLES --- */
 
 .results-container {
-    width: 85%;
+    width: 95%;
     margin: 30px auto;
     text-align: center;
 }
@@ -248,7 +249,6 @@ header a:active {
     right: 0;
     margin: auto;
     z-index: 100;
-    background-color: var(--dk-blue);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);

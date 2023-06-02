@@ -11,6 +11,15 @@ let currQueenData
 // render page on reload/initial load
 render()
 
+// OPEN + CLOSE ABOUT MODAL
+document.getElementById('about-btn').addEventListener('click', () => {
+    document.getElementById('about-modal').style.display = 'block'
+})
+
+document.getElementById('about-close').addEventListener('click', () => {
+    document.getElementById('about-modal').style.display = 'none'
+})
+
 function getNewQueen() {
     let i = Math.floor(Math.random() * queensArray.length)
     currQueenData = queenData[queensArray[i]]
@@ -91,7 +100,7 @@ function checkIfBigThree() {
 
         document.getElementById('queen-card').style.display = 'none'
         document.getElementById('current-placement-container').style.display = 'none'
-        document.getElementById('container').innerHTML =  `<div class="results-container">
+        document.getElementById('results-container').innerHTML =  `
                 <p>Your Big Three</p>
                 <div class="all-avatars">
                     <br> 
@@ -108,16 +117,7 @@ function checkIfBigThree() {
                     </div>
                 </div>
                 <a href="index.html" class="restart-btn">Restart</a>
-            </div>`
+            `
     }
 }
 
-
-// OPEN + CLOSE ABOUT MODAL
-document.getElementById('about-btn').addEventListener('click', () => {
-    document.getElementById('about-modal').style.display = 'block'
-})
-
-document.getElementById('about-close').addEventListener('click', () => {
-    document.getElementById('about-modal').style.display = 'none'
-})
