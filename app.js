@@ -55,7 +55,7 @@ document.getElementById('reject-btn').addEventListener('click',
         setTimeout(() => {
            document.getElementById('queen-card').innerHTML = getNewQueen().getQueenHtml() 
            document.getElementById('queen-card').classList.remove('rejected')
-        }, 700)        
+        }, 800)        
     })
 
 document.getElementById('accept-btn').addEventListener('click',
@@ -66,7 +66,7 @@ document.getElementById('accept-btn').addEventListener('click',
         setTimeout(() => {
             handleAcceptClick()
             document.getElementById('queen-card').classList.remove('accepted')
-        }, 700)
+        }, 800)
     })
 
 function handleAcceptClick() {

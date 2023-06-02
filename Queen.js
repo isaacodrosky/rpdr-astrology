@@ -4,12 +4,11 @@ class Queen {
     }
 
     getQueenHtml() {
-        const { name, profilePic, season, bio } = this
+        const { name, profilePic } = this
         const queenHtml = `
             <img src="${profilePic}" alt="${name}">
             <div class="queen-card-text">
                 <p class="queen-name">${name}</p>
-                <p class="season">${season}</p>
             </div>
             `
         return queenHtml
