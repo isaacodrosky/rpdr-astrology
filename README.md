@@ -1,6 +1,8 @@
 
 # RPDR Big Three
 
+<a href="https://rpdr-bigthree.netlify.app" target="_blank">Live demo</a>
+
 RPDR Big Three will tell you which RuPaul's Drag Race Queen represents your sun, moon, and ascending signs based on random generation.
 
 It was created in JavaScript, HTML, and CSS.
