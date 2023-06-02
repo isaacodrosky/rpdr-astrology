@@ -100,10 +100,6 @@ header a:active {
     font-size: 1.3rem;
 }
 
-.season {
-    font-family: var(--main-font);
-    font-size: 1rem;
-}
 
 /* --- CURRENT PLACEMENT / BUTTONS --- */
 .current-placement-container {
